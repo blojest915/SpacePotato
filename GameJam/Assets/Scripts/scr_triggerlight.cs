@@ -11,7 +11,7 @@ public class scr_triggerlight : MonoBehaviour {
 	public Material offMaterial;
 	public GameObject OnEye;
 	public GameObject OffEye;
-	public GameObject feedback;
+	//public GameObject feedback;
 
 	// Use this for initialization
 	void Start () 
