@@ -20,7 +20,7 @@ public class scr_triggerdoors : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && !isMoving)
 		{
 			isOpen = true;
 			isMoving = true;
@@ -29,7 +29,7 @@ public class scr_triggerdoors : MonoBehaviour {
 
 	void OnTriggerExit(Collider other)
 	{
-		if (other.gameObject.tag == "Player")
+		if (other.gameObject.tag == "Player" && !isMoving)
 		{
 			isOpen = false;
 			isMoving = true;
@@ -37,7 +37,14 @@ public class scr_triggerdoors : MonoBehaviour {
 	}
 
 
-
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Player" && !isOpen && !isMoving)
+        {
+            isOpen = true;
+            isMoving = true;
+        }
+    }
 
 
 	// Update is called once per frame

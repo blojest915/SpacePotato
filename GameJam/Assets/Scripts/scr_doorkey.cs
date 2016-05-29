@@ -25,7 +25,7 @@ public class scr_doorkey : MonoBehaviour {
 
 		player = GameObject.FindGameObjectWithTag("Player");
 		Keyinventory = player.GetComponent <scr_keyinventory> ();
-		Keypickup = GameObject.FindGameObjectWithTag ("key").GetComponent <scr_keypickup> ();
+		Keypickup = GameObject.FindGameObjectWithTag ("KeySpawner").GetComponent <scr_keypickup> ();
 
 
 

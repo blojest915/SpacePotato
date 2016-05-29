@@ -13,6 +13,7 @@ public class RestartScript : MonoBehaviour {
 
     void Start()
     {
+        GameObject.FindWithTag("Music").BroadcastMessage("PlayLevelMusic");
         isActive = false;
         RestartImage.enabled = false;
         RestartText.enabled = false;
@@ -23,18 +24,16 @@ public class RestartScript : MonoBehaviour {
 	public void ToggleOn()
     {
         isActive = true;
+        RestartImage.enabled = true;
         RestartText.enabled = true;
         YesText.enabled = true;
         NoText.enabled = true;
-        GameObject.FindWithTag("Music").BroadcastMessage("PlayLoseMusic");
     }
 
     public void RestartCurrentLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1.0f;
-        GameObject.FindWithTag("Music").BroadcastMessage("PlayLevelMusic");
-
     }
 
     public void GoToLevelSelect()
