@@ -14,7 +14,6 @@ public class scr_Music : MonoBehaviour
     void Start ()
     {
         DontDestroyOnLoad(transform.gameObject);
-
         mySource = GetComponent<AudioSource>();
         PlayMenuMusic();
 	}
