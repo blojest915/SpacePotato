@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 786cd887a73c53d4294e929e7aff7180
-timeCreated: 1464494738
+timeCreated: 1464498550
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -123,10 +123,6 @@ SubstanceImporter:
           second: 0.5
         data:
           first:
-            name: _EmissivePower
-          second: 0.1
-        data:
-          first:
             name: _Parallax
           second: 0.02
         data:
@@ -161,6 +157,10 @@ SubstanceImporter:
           first:
             name: _Metallic
           second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 0.1
         data:
           first:
             name: _EmissiveOnOff
@@ -337,26 +337,6 @@ SubstanceImporter:
           second: 0.5
         data:
           first:
-            name: _Emissiveonoff
-          second: 0
-        data:
-          first:
-            name: _EmissivePowermax
-          second: 1.2
-        data:
-          first:
-            name: _EmissivePowerMin
-          second: 0.8
-        data:
-          first:
-            name: _EmissivePower
-          second: 7.94
-        data:
-          first:
-            name: _U
-          second: 20
-        data:
-          first:
             name: _Parallax
           second: 0.02
         data:
@@ -393,12 +373,32 @@ SubstanceImporter:
           second: 0
         data:
           first:
+            name: _EmissivePower
+          second: 7.94
+        data:
+          first:
             name: _EmissiveOnOff
           second: 1
         data:
           first:
             name: _node_5786
           second: 1
+        data:
+          first:
+            name: _Emissiveonoff
+          second: 0
+        data:
+          first:
+            name: _EmissivePowermax
+          second: 1.2
+        data:
+          first:
+            name: _EmissivePowerMin
+          second: 0.8
+        data:
+          first:
+            name: _U
+          second: 20
         data:
           first:
             name: _Time
@@ -575,14 +575,6 @@ SubstanceImporter:
           second: 0.5
         data:
           first:
-            name: _EmissivePower
-          second: 7.94
-        data:
-          first:
-            name: _U
-          second: 20
-        data:
-          first:
             name: _Parallax
           second: 0.02
         data:
@@ -619,12 +611,20 @@ SubstanceImporter:
           second: 0
         data:
           first:
+            name: _EmissivePower
+          second: 7.94
+        data:
+          first:
             name: _EmissiveOnOff
           second: 1
         data:
           first:
             name: _node_5786
           second: 1
+        data:
+          first:
+            name: _U
+          second: 20
       colors:
         data:
           first:
@@ -797,22 +797,6 @@ SubstanceImporter:
           second: 0.5
         data:
           first:
-            name: _Emissiveonoff
-          second: 1
-        data:
-          first:
-            name: _EmissivePowermax
-          second: 10
-        data:
-          first:
-            name: _EmissivePowerMin
-          second: 0.8
-        data:
-          first:
-            name: _EmissivePower
-          second: 0.1
-        data:
-          first:
             name: _Parallax
           second: 0.02
         data:
@@ -849,12 +833,28 @@ SubstanceImporter:
           second: 0
         data:
           first:
+            name: _EmissivePower
+          second: 0.1
+        data:
+          first:
             name: _EmissiveOnOff
           second: 1
         data:
           first:
             name: _node_5786
           second: 1
+        data:
+          first:
+            name: _Emissiveonoff
+          second: 1
+        data:
+          first:
+            name: _EmissivePowermax
+          second: 10
+        data:
+          first:
+            name: _EmissivePowerMin
+          second: 0.8
         data:
           first:
             name: _Time
