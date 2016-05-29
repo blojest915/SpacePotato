@@ -23,6 +23,7 @@ public class LevelManagerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        //DeleteAll();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         FillList();
@@ -75,5 +76,10 @@ public class LevelManagerScript : MonoBehaviour {
     void loadLevels(string level)
     {
         SceneManager.LoadScene(level);
+    }
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("Main_Menu");
     }
 }

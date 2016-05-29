@@ -9,7 +9,6 @@ public class LoseScript : MonoBehaviour {
     
     void Start()
     {
-        GameObject.FindWithTag("Music").BroadcastMessage("PlayLevelMusic");
         gameover = false;
     }
 
@@ -20,6 +19,7 @@ public class LoseScript : MonoBehaviour {
             if (other.gameObject.CompareTag("DeadZone"))
             {
                 GameOver();
+                GameObject.FindWithTag("Music").BroadcastMessage("PlayLoseMusic");
                 Time.timeScale = 0f;
                 restart.ToggleOn();
             }
