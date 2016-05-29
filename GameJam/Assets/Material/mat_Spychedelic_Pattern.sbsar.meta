@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 51ab29107a765984e91dd447cb180bfc
-timeCreated: 1464542284
+timeCreated: 1464543580
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -91,7 +91,7 @@ SubstanceImporter:
         data:
           first:
             name: _EmissivePower
-          second: 2
+          second: 1.96
         data:
           first:
             name: _node_5084
@@ -238,7 +238,7 @@ SubstanceImporter:
         data:
           first:
             name: _EmissivePower
-          second: 2
+          second: 0.98
         data:
           first:
             name: _node_5084
@@ -317,9 +317,9 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Fond_ColorOutput_Color
       value:
-        scalar[0]: 0.375
-        scalar[1]: 0.26128295
-        scalar[2]: 0.057904422
+        scalar[0]: 0.084012926
+        scalar[1]: 0.07493511
+        scalar[2]: 0.102941155
         scalar[3]: 1
         texture: {instanceID: 0}
     - name: Color_Hue
@@ -331,14 +331,14 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Color_Saturation
       value:
-        scalar[0]: 0.688
+        scalar[0]: 0.623
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: ColorLightness
       value:
-        scalar[0]: 0.827
+        scalar[0]: 0.541
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -385,7 +385,7 @@ SubstanceImporter:
         data:
           first:
             name: _EmissivePower
-          second: 2.3
+          second: 0.94
         data:
           first:
             name: _node_5084
@@ -464,9 +464,9 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Fond_ColorOutput_Color
       value:
-        scalar[0]: 0.32090446
-        scalar[1]: 0.13321799
-        scalar[2]: 0.32352942
+        scalar[0]: 0.28027683
+        scalar[1]: 0.39705884
+        scalar[2]: 0.38739413
         scalar[3]: 1
         texture: {instanceID: 0}
     - name: Color_Hue
@@ -478,7 +478,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Color_Saturation
       value:
-        scalar[0]: 0.708
+        scalar[0]: 0.518
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -625,14 +625,14 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Color_Saturation
       value:
-        scalar[0]: 0.754
+        scalar[0]: 0.616
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: ColorLightness
       value:
-        scalar[0]: 0.373
+        scalar[0]: 0.4
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -772,14 +772,14 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Color_Saturation
       value:
-        scalar[0]: 0.777
+        scalar[0]: 0.554
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: ColorLightness
       value:
-        scalar[0]: 0.392
+        scalar[0]: 0.372
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -905,28 +905,28 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Fond_ColorOutput_Color
       value:
-        scalar[0]: 0.1753352
-        scalar[1]: 0.3455882
-        scalar[2]: 0.2540038
+        scalar[0]: 0.13440742
+        scalar[1]: 0.16176468
+        scalar[2]: 0.14704835
         scalar[3]: 1
         texture: {instanceID: 0}
     - name: Color_Hue
       value:
-        scalar[0]: 0.134
+        scalar[0]: 0.132
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Color_Saturation
       value:
-        scalar[0]: 0.45
+        scalar[0]: 0.527
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: ColorLightness
       value:
-        scalar[0]: 0.504
+        scalar[0]: 0.548
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -1052,9 +1052,9 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Fond_ColorOutput_Color
       value:
-        scalar[0]: 0.009731836
-        scalar[1]: 0.022043878
-        scalar[2]: 0.14705884
+        scalar[0]: 0.23161766
+        scalar[1]: 0.23458418
+        scalar[2]: 0.2647059
         scalar[3]: 1
         texture: {instanceID: 0}
     - name: Color_Hue
@@ -1066,7 +1066,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Color_Saturation
       value:
-        scalar[0]: 0.747
+        scalar[0]: 0.577
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0

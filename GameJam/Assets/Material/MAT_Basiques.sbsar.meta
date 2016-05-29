@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 786cd887a73c53d4294e929e7aff7180
-timeCreated: 1464542137
+timeCreated: 1464543387
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -957,9 +957,9 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Dielectrique_Color
       value:
-        scalar[0]: 0.05882353
-        scalar[1]: 0.003921569
-        scalar[2]: 0.08235294
+        scalar[0]: 0.18393166
+        scalar[1]: 0.2255623
+        scalar[2]: 0.30882353
         scalar[3]: 1
         texture: {instanceID: 0}
     - name: Metal_Type
