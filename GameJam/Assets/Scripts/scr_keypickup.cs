@@ -7,7 +7,7 @@ public class scr_keypickup : MonoBehaviour {
 	private GameObject player;
 	private scr_keyinventory Keyinventory;
 	public GameObject key;
-	public GameObject keyinstance;
+	private GameObject keyinstance;
 
 	// Use this for initialization
 	void Awake () {
