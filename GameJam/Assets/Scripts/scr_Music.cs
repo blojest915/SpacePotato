@@ -8,21 +8,47 @@ public class scr_Music : MonoBehaviour
     public AudioClip myLevelMusic;
     public AudioClip myWinMusic;
     public AudioClip myLoseMusic;
-
+    private float i = 0;
+    bool hasStarted = false;
 
     // Use this for initialization
     void Start ()
     {
         DontDestroyOnLoad(transform.gameObject);
         mySource = GetComponent<AudioSource>();
-        PlayMenuMusic();
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-	
-	}
+        i += Time.deltaTime;
+
+        if (i > 1 && !hasStarted)
+        {
+            hasStarted = true;
+            StartUpDelay(1);
+        }
+    }
+
+    void StartUpDelay(int musicNumber)
+    {
+        if (musicNumber == 1)
+        {
+            PlayMenuMusic();
+        }
+        else if (musicNumber == 2)
+        {
+            PlayLevelMusic();
+        }
+        else if (musicNumber == 3)
+        {
+            PlayWinMusic();
+        }
+        else if (musicNumber == 4)
+        {
+            PlayLoseMusic();
+        }
+    }
 
     public void PlayMenuMusic()
     {

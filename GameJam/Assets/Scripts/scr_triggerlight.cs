@@ -68,7 +68,7 @@ public class scr_triggerlight : MonoBehaviour {
 		else
 		{
             AudioSource audio = GetComponent<AudioSource>();
-            audio.pitch += Random.Range(-0.5f,0.5f);
+            audio.pitch += Random.Range(-0.3f,0.3f);
             audio.Play();
             light01.enabled = true;
 			isOn = true;

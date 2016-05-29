@@ -5,7 +5,6 @@ using System.Collections;
 
 public class WinScript : MonoBehaviour {
     
-    public int score = 0;
     public Text lightCountText;
     public Text ScoreCountText;
     public Text TimerMultiplierText;
@@ -16,7 +15,7 @@ public class WinScript : MonoBehaviour {
 
     private float TimerFloat = 100;
     private int TimerMultiplier = 1;
-
+    private int score = 0;
     private int levelAmount = 8;
     private int CurrentLevel;
     
@@ -80,6 +79,7 @@ public class WinScript : MonoBehaviour {
         lightCountText.text = LitLights.ToString() + "/" + TotalLights.ToString();
         if (LitLights == TotalLights)
         {
+            GameObject.FindWithTag("Music").BroadcastMessage("PlayWinMusic");
             Time.timeScale = 0f;
             lightCountText.text = "Level Complete";
             CheckCurrentLevel();
@@ -89,7 +89,7 @@ public class WinScript : MonoBehaviour {
 
     void updateLevelScore()
     {
-        TimerMultiplier = (int)TimerFloat;
+        TimerMultiplier = (int)Mathf.Floor(TimerFloat);
         score = score * TimerMultiplier;
         if (score < 0)
         {
