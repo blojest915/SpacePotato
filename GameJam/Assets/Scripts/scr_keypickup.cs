@@ -29,10 +29,9 @@ public class scr_keypickup : MonoBehaviour {
 			//key.transform.parent = player.transform;
 			//key.parent=null;
 			keyinstance.transform.SetParent (player.transform);
+
+            Destroy(this);
 				
-
-
-
 		}
 	}
 
