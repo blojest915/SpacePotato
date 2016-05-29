@@ -10,6 +10,10 @@ public class WinScript : MonoBehaviour {
     public Text TimerMultiplierText;
     public RestartScript restart;
 
+    public scr_HugeEyeLid upperHugeEyeLid;
+    public scr_HugeEyeLid lowerHugeEyeLid;
+
+
     private int TotalLights;
     private int LitLights;
 
@@ -25,6 +29,9 @@ public class WinScript : MonoBehaviour {
         ScoreCountText.text = "";
         TimerMultiplierText.text = "";
         updateLightCount();
+
+        upperHugeEyeLid.associateEyeLid(true, TotalLights);
+        lowerHugeEyeLid.associateEyeLid(false, TotalLights);
     }
 
     void Update()
@@ -65,6 +72,8 @@ public class WinScript : MonoBehaviour {
         LitLights++;
         score += 1;
         updateLightCount();
+        upperHugeEyeLid.RaiseEyeLid();
+        lowerHugeEyeLid.RaiseEyeLid();
     }
 
     public void decrementLights()
@@ -72,6 +81,8 @@ public class WinScript : MonoBehaviour {
         LitLights--;
         score -= 1;
         updateLightCount();
+        upperHugeEyeLid.LowerEyeLid();
+        lowerHugeEyeLid.LowerEyeLid();
     }
 
     void updateLightCount()

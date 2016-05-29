@@ -9,8 +9,10 @@ public class scr_triggerlight : MonoBehaviour {
     private bool isTurningOff = false;
 
     public float duration = 30.0f;
+    public scr_Eyeball eyeball;
 
     private float setDuration;
+    private float lookDelai = 0.5f;
 
     private Renderer myLight; 
 	public Material onMaterial;
@@ -50,6 +52,7 @@ public class scr_triggerlight : MonoBehaviour {
             isTurningOff = true;
         }
     }
+    
 
 
     void ToggleLight()
@@ -58,6 +61,7 @@ public class scr_triggerlight : MonoBehaviour {
         resetDuration();
         if (isOn)
 		{
+            lookDelai = 0.5f;
             light01.enabled = false;
 			isOn = false; 
 			myLight.material = offMaterial;
@@ -77,6 +81,8 @@ public class scr_triggerlight : MonoBehaviour {
 			OffEye.SetActive(false);
 			feedback.GetComponent<ParticleSystem> ().Play ();
             GameObject.FindGameObjectWithTag("WinCondition").GetComponent<WinScript>().incrementLights();
+
+            
         }
 	}
 
