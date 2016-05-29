@@ -89,7 +89,10 @@ public class WinScript : MonoBehaviour {
         lightCountText.text = LitLights.ToString() + "/" + TotalLights.ToString()  + " Eyes Open";
         if (LitLights == TotalLights)
         {
-            GameObject.FindWithTag("Music").BroadcastMessage("PlayWinMusic");
+            if (GameObject.FindWithTag("Music") != null)
+            {
+                GameObject.FindWithTag("Music").BroadcastMessage("PlayWinMusic");
+            }
             Time.timeScale = 0f;
             lightCountText.text = "Level Complete";
             CheckCurrentLevel();
