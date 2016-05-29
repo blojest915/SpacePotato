@@ -1,7 +1,7 @@
 // Shader created with Shader Forge v1.26 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.26;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:True,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:32719,y:32712,varname:node_2865,prsc:2|diff-7736-RGB,spec-1511-B,gloss-1511-G,normal-5964-RGB,emission-9328-OUT;n:type:ShaderForge.SFN_Tex2d,id:7736,x:31839,y:32398,ptovrint:True,ptlb:Albedo,ptin:_MainTex,varname:_MainTex,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:786cd887a73c53d4294e929e7aff7180,ntxv:0,isnm:False|UVIN-9404-UVOUT;n:type:ShaderForge.SFN_Tex2d,id:5964,x:31965,y:32718,ptovrint:True,ptlb:Normal Map,ptin:_BumpMap,varname:_BumpMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:3,isnm:True|UVIN-9404-UVOUT;n:type:ShaderForge.SFN_Tex2d,id:1511,x:31654,y:32803,ptovrint:False,ptlb:Parameter,ptin:_Parameter,varname:node_1511,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False|UVIN-9404-UVOUT;n:type:ShaderForge.SFN_Slider,id:5049,x:31746,y:33280,ptovrint:False,ptlb:Emissive Power,ptin:_EmissivePower,varname:node_5049,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0.1,cur:10,max:10;n:type:ShaderForge.SFN_Multiply,id:9328,x:32169,y:33079,varname:node_9328,prsc:2|A-2029-RGB,B-5049-OUT;n:type:ShaderForge.SFN_Tex2d,id:2029,x:31509,y:33042,ptovrint:False,ptlb:Emissive,ptin:_Emissive,varname:node_2029,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False|UVIN-9404-UVOUT;n:type:ShaderForge.SFN_Panner,id:9404,x:31170,y:32430,varname:node_9404,prsc:2,spu:0.4,spv:0|UVIN-7981-UVOUT;n:type:ShaderForge.SFN_ValueProperty,id:1090,x:30767,y:32708,ptovrint:False,ptlb:U,ptin:_U,varname:node_1090,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:20;n:type:ShaderForge.SFN_TexCoord,id:7981,x:30803,y:32493,varname:node_7981,prsc:2,uv:0;proporder:7736-5964-1511-2029-5049-1090;pass:END;sub:END;*/
+/*SF_DATA;ver:1.26;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:True,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:32719,y:32712,varname:node_2865,prsc:2|diff-7736-RGB,spec-1511-B,gloss-1511-G,normal-5964-RGB,emission-9328-OUT;n:type:ShaderForge.SFN_Tex2d,id:7736,x:31839,y:32398,ptovrint:True,ptlb:Albedo,ptin:_MainTex,varname:_MainTex,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False|UVIN-9404-UVOUT;n:type:ShaderForge.SFN_Tex2d,id:5964,x:31965,y:32718,ptovrint:True,ptlb:Normal Map,ptin:_BumpMap,varname:_BumpMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:3,isnm:True|UVIN-9404-UVOUT;n:type:ShaderForge.SFN_Tex2d,id:1511,x:31654,y:32803,ptovrint:False,ptlb:Parameter,ptin:_Parameter,varname:node_1511,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False|UVIN-9404-UVOUT;n:type:ShaderForge.SFN_Slider,id:5049,x:31746,y:33280,ptovrint:False,ptlb:Emissive Power,ptin:_EmissivePower,varname:node_5049,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0.1,cur:10,max:10;n:type:ShaderForge.SFN_Multiply,id:9328,x:32169,y:33079,varname:node_9328,prsc:2|A-2029-RGB,B-5049-OUT;n:type:ShaderForge.SFN_Tex2d,id:2029,x:31509,y:33042,ptovrint:False,ptlb:Emissive,ptin:_Emissive,varname:node_2029,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False|UVIN-9404-UVOUT;n:type:ShaderForge.SFN_Panner,id:9404,x:31174,y:32428,varname:node_9404,prsc:2,spu:0.1,spv:0|UVIN-7981-UVOUT;n:type:ShaderForge.SFN_TexCoord,id:7981,x:30716,y:32493,varname:node_7981,prsc:2,uv:0;proporder:7736-5964-1511-2029-5049;pass:END;sub:END;*/
 
 Shader "Space Potato Panner" {
     Properties {
@@ -10,7 +10,6 @@ Shader "Space Potato Panner" {
         _Parameter ("Parameter", 2D) = "white" {}
         _Emissive ("Emissive", 2D) = "white" {}
         _EmissivePower ("Emissive Power", Range(0.1, 10)) = 10
-        _U ("U", Float ) = 20
     }
     SubShader {
         Tags {
@@ -96,8 +95,8 @@ Shader "Space Potato Panner" {
                 i.normalDir = normalize(i.normalDir);
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float4 node_1229 = _Time + _TimeEditor;
-                float2 node_9404 = (i.uv0+node_1229.g*float2(0.4,0));
+                float4 node_2873 = _Time + _TimeEditor;
+                float2 node_9404 = (i.uv0+node_2873.g*float2(0.1,0));
                 float3 _BumpMap_var = UnpackNormal(tex2D(_BumpMap,TRANSFORM_TEX(node_9404, _BumpMap)));
                 float3 normalLocal = _BumpMap_var.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
@@ -259,8 +258,8 @@ Shader "Space Potato Panner" {
                 i.normalDir = normalize(i.normalDir);
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float4 node_617 = _Time + _TimeEditor;
-                float2 node_9404 = (i.uv0+node_617.g*float2(0.4,0));
+                float4 node_8068 = _Time + _TimeEditor;
+                float2 node_9404 = (i.uv0+node_8068.g*float2(0.1,0));
                 float3 _BumpMap_var = UnpackNormal(tex2D(_BumpMap,TRANSFORM_TEX(node_9404, _BumpMap)));
                 float3 normalLocal = _BumpMap_var.rgb;
                 float3 normalDirection = normalize(mul( normalLocal, tangentTransform )); // Perturbed normals
@@ -364,8 +363,8 @@ Shader "Space Potato Panner" {
                 UnityMetaInput o;
                 UNITY_INITIALIZE_OUTPUT( UnityMetaInput, o );
                 
-                float4 node_2247 = _Time + _TimeEditor;
-                float2 node_9404 = (i.uv0+node_2247.g*float2(0.4,0));
+                float4 node_6534 = _Time + _TimeEditor;
+                float2 node_9404 = (i.uv0+node_6534.g*float2(0.1,0));
                 float4 _Emissive_var = tex2D(_Emissive,TRANSFORM_TEX(node_9404, _Emissive));
                 o.Emission = (_Emissive_var.rgb*_EmissivePower);
                 
