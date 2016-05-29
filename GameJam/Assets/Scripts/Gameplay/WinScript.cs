@@ -20,7 +20,7 @@ public class WinScript : MonoBehaviour {
     private float TimerFloat = 100;
     private int TimerMultiplier = 1;
     private int score = 0;
-    private int levelAmount = 8;
+    private int levelAmount = 6;
     private int CurrentLevel;
     
 	void Start () {
