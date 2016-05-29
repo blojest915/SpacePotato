@@ -6,6 +6,7 @@ using System.Collections;
 public class RestartScript : MonoBehaviour {
 
     bool isActive;
+    public Image RestartImage;
     public Text RestartText;
     public Text YesText;
     public Text NoText;
@@ -13,6 +14,7 @@ public class RestartScript : MonoBehaviour {
     void Start()
     {
         isActive = false;
+        RestartImage.enabled = false;
         RestartText.enabled = false;
         YesText.enabled = false;
         NoText.enabled = false;
