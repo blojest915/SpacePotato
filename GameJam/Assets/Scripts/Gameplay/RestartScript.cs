@@ -23,6 +23,7 @@ public class RestartScript : MonoBehaviour {
 	public void ToggleOn()
     {
         isActive = true;
+        RestartImage.enabled = true;
         RestartText.enabled = true;
         YesText.enabled = true;
         NoText.enabled = true;

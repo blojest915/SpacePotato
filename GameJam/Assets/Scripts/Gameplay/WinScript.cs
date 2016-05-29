@@ -64,14 +64,14 @@ public class WinScript : MonoBehaviour {
     public void incrementLights()
     {
         LitLights++;
-        score += 1000;
+        score += 1;
         updateLightCount();
     }
 
     public void decrementLights()
     {
         LitLights--;
-        score -= 1000;
+        score -= 1;
         updateLightCount();
     }
 
@@ -91,6 +91,10 @@ public class WinScript : MonoBehaviour {
     {
         TimerMultiplier = (int)TimerFloat;
         score = score * TimerMultiplier;
+        if (score < 0)
+        {
+            score = 0;
+        }
         ScoreCountText.text = "Score: " + score.ToString();
         TimerMultiplierText.text = "Timer Multiplier: x" + TimerMultiplier.ToString();
         if (PlayerPrefs.GetInt("Level" + CurrentLevel.ToString() + "_score") < score)

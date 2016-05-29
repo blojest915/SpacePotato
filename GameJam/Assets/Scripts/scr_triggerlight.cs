@@ -8,7 +8,7 @@ public class scr_triggerlight : MonoBehaviour {
 
     private bool isTurningOff = false;
 
-    public float duration = 10.0f;
+    public float duration = 30.0f;
 
     private float setDuration;
 
