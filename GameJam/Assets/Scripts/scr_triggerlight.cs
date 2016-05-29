@@ -11,6 +11,7 @@ public class scr_triggerlight : MonoBehaviour {
 	public Material offMaterial;
 	public GameObject OnEye;
 	public GameObject OffEye;
+	public GameObject feedback;
 
 	// Use this for initialization
 	void Start () 
@@ -51,7 +52,12 @@ public class scr_triggerlight : MonoBehaviour {
 			myLight.material = onMaterial;
 			OnEye.SetActive(true);
 			OffEye.SetActive(false);
+			feedback.GetComponent<ParticleSystem> ().Play ();
             GameObject.FindGameObjectWithTag("WinCondition").GetComponent<WinScript>().incrementLights();
+		//	feedback.SetActive(true);
+
+			//feedback.playOnAwake = true;
+
         }
 	}
 	
