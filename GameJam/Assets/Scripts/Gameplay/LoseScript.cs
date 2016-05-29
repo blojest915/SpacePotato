@@ -9,6 +9,7 @@ public class LoseScript : MonoBehaviour {
     
     void Start()
     {
+        GameObject.FindWithTag("Music").BroadcastMessage("PlayLevelMusic");
         gameover = false;
     }
 
