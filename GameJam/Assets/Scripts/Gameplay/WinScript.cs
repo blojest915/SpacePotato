@@ -61,7 +61,6 @@ public class WinScript : MonoBehaviour {
         if (NextLevel < levelAmount)
         {
             PlayerPrefs.SetInt("Level" + NextLevel.ToString(), 1);
-            
         }
         updateLevelScore();
     }
@@ -87,7 +86,7 @@ public class WinScript : MonoBehaviour {
 
     void updateLightCount()
     {
-        lightCountText.text = LitLights.ToString() + "/" + TotalLights.ToString();
+        lightCountText.text = LitLights.ToString() + "/" + TotalLights.ToString()  + " Eyes Open";
         if (LitLights == TotalLights)
         {
             GameObject.FindWithTag("Music").BroadcastMessage("PlayWinMusic");
@@ -101,6 +100,10 @@ public class WinScript : MonoBehaviour {
     void updateLevelScore()
     {
         TimerMultiplier = (int)Mathf.Floor(TimerFloat);
+        if (TimerMultiplier < 1)
+        {
+            TimerMultiplier = 1;
+        }
         score = score * TimerMultiplier;
         if (score < 0)
         {
