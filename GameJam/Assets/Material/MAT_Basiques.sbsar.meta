@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 786cd887a73c53d4294e929e7aff7180
-timeCreated: 1464493943
+timeCreated: 1464492789
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -10,7 +10,7 @@ SubstanceImporter:
     prototypeName: Biomydra_Mat_SF
     shaderName: 
     shader: {fileID: 4800000, guid: b84ca8400bd9f644a81dc7832981b9f8, type: 3}
-    shaderKeywords: _EMISSION _NORMALMAP
+    shaderKeywords: _EMISSION _EMISSIVEONOFF_ON _NORMALMAP
     renderQueue: 2000
     lightmapFlags: 1
     inputs:
@@ -30,7 +30,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Dielectrique_or_Metal
       value:
-        scalar[0]: 1
+        scalar[0]: 2
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -169,22 +169,6 @@ SubstanceImporter:
           first:
             name: _node_5786
           second: 1
-        data:
-          first:
-            name: _Emissiveonoff
-          second: 0
-        data:
-          first:
-            name: _EmissivePowermax
-          second: 1.2
-        data:
-          first:
-            name: _EmissivePowerMin
-          second: 0.8
-        data:
-          first:
-            name: _Time
-          second: 0
       colors:
         data:
           first:
@@ -224,6 +208,10 @@ SubstanceImporter:
         name: _BumpMap
       material: {instanceID: 0}
       baseUID: 1787776
+    - shaderProp:
+        name: _Parameter
+      material: {instanceID: 0}
+      baseUID: 1787788
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
@@ -385,18 +373,6 @@ SubstanceImporter:
           second: 0
         data:
           first:
-            name: _EmissivePower
-          second: 7.94
-        data:
-          first:
-            name: _EmissiveOnOff
-          second: 1
-        data:
-          first:
-            name: _node_5786
-          second: 1
-        data:
-          first:
             name: _Emissiveonoff
           second: 0
         data:
@@ -409,8 +385,20 @@ SubstanceImporter:
           second: 0.8
         data:
           first:
+            name: _EmissivePower
+          second: 7.94
+        data:
+          first:
             name: _U
           second: 20
+        data:
+          first:
+            name: _EmissiveOnOff
+          second: 1
+        data:
+          first:
+            name: _node_5786
+          second: 1
         data:
           first:
             name: _Time
@@ -627,16 +615,16 @@ SubstanceImporter:
           second: 7.94
         data:
           first:
+            name: _U
+          second: 20
+        data:
+          first:
             name: _EmissiveOnOff
           second: 1
         data:
           first:
             name: _node_5786
           second: 1
-        data:
-          first:
-            name: _U
-          second: 20
       colors:
         data:
           first:
@@ -695,8 +683,8 @@ SubstanceImporter:
     name: Mat_Eyes
     prototypeName: Biomydra_Mat_SF
     shaderName: 
-    shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _EMISSION _EMISSIVEONOFF_ON
+    shader: {fileID: 4800000, guid: b84ca8400bd9f644a81dc7832981b9f8, type: 3}
+    shaderKeywords: _EMISSION _EMISSIVEONOFF_ON _NORMALMAP
     renderQueue: 2000
     lightmapFlags: 1
     inputs:
@@ -770,6 +758,27 @@ SubstanceImporter:
           first:
             name: _MainTex
           second:
+            texture: {fileID: 2800000, guid: d0872b46816351c4f9c222de413d069c, type: 3}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _BumpMap
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Parameter
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Emissive
+          second:
             texture: {fileID: 2800000, guid: bcde300d99a2cb34e9776dbbf1e2178c, type: 3}
             scale: {x: 1, y: 1}
             offset: {x: 0, y: 0}
@@ -824,18 +833,6 @@ SubstanceImporter:
           second: 0
         data:
           first:
-            name: _EmissivePower
-          second: 0.1
-        data:
-          first:
-            name: _EmissiveOnOff
-          second: 1
-        data:
-          first:
-            name: _node_5786
-          second: 1
-        data:
-          first:
             name: _Emissiveonoff
           second: 0
         data:
@@ -846,6 +843,18 @@ SubstanceImporter:
           first:
             name: _EmissivePowerMin
           second: 0.8
+        data:
+          first:
+            name: _EmissivePower
+          second: 0.1
+        data:
+          first:
+            name: _EmissiveOnOff
+          second: 1
+        data:
+          first:
+            name: _node_5786
+          second: 1
         data:
           first:
             name: _Time
@@ -880,246 +889,13 @@ SubstanceImporter:
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    textureAssignments: []
-    buildTargetSettings:
-    - serializedVersion: 2
-      buildTarget: 
-      textureWidth: 512
-      textureHeight: 512
-      textureFormat: 0
-      loadingBehavior: 1
-  - serializedVersion: 16
-    name: Walls
-    prototypeName: Biomydra_Mat_SF
-    shaderName: 
-    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: 
-    renderQueue: -1
-    lightmapFlags: 5
-    inputs:
-    - name: $outputsize
-      value:
-        scalar[0]: 8
-        scalar[1]: 8
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: $randomseed
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Dielectrique_or_Metal
-      value:
-        scalar[0]: 2
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Dielectrique_Color
-      value:
-        scalar[0]: 0
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 1
-        texture: {instanceID: 0}
-    - name: Metal_Type
-      value:
-        scalar[0]: 10
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Roughness_Value
-      value:
-        scalar[0]: 0.701
-        scalar[1]: 0
-        scalar[2]: 0
-        scalar[3]: 0
-        texture: {instanceID: 0}
-    - name: Metal_Color
-      value:
-        scalar[0]: 0.829602
-        scalar[1]: 0.894118
-        scalar[2]: 0.809964
-        scalar[3]: 1
-        texture: {instanceID: 0}
-    - name: EmissiveColorOutput_Color
-      value:
-        scalar[0]: 0.123827
-        scalar[1]: 0.153521
-        scalar[2]: 0.717647
-        scalar[3]: 1
-        texture: {instanceID: 0}
-    materialInformation:
-      serializedVersion: 5
-      offset: {x: 0, y: 0}
-      scale: {x: 1, y: 1}
-      generateMipmaps: 1
-      generateAllOutputs: 0
-      animationUpdateRate: 0
-    materialProperties:
-      serializedVersion: 2
-      texEnvs:
-        data:
-          first:
-            name: _MainTex
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _BumpMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _DetailNormalMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _ParallaxMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _OcclusionMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _EmissionMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _DetailMask
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _DetailAlbedoMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _MetallicGlossMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-      floats:
-        data:
-          first:
-            name: _SrcBlend
-          second: 1
-        data:
-          first:
-            name: _DstBlend
-          second: 0
-        data:
-          first:
-            name: _Cutoff
-          second: 0.5
-        data:
-          first:
-            name: _Parallax
-          second: 0.02
-        data:
-          first:
-            name: _ZWrite
-          second: 1
-        data:
-          first:
-            name: _Glossiness
-          second: 0.5
-        data:
-          first:
-            name: _BumpScale
-          second: 1
-        data:
-          first:
-            name: _OcclusionStrength
-          second: 1
-        data:
-          first:
-            name: _DetailNormalMapScale
-          second: 1
-        data:
-          first:
-            name: _UVSec
-          second: 0
-        data:
-          first:
-            name: _Mode
-          second: 0
-        data:
-          first:
-            name: _Metallic
-          second: 0
-      colors:
-        data:
-          first:
-            name: _EmissionColor
-          second: {r: 1, g: 1, b: 1, a: 1}
-        data:
-          first:
-            name: _Color
-          second: {r: 1, g: 1, b: 1, a: 1}
-    textureParameters:
-    - name: Walls_basecolor
-      alphaSource: 6
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Walls_normal
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Walls_metallic
-      alphaSource: 7
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
-    - name: Walls_Emissive
-      alphaSource: 0
-      filterMode: 1
-      aniso: 1
-      wrapMode: 0
     textureAssignments:
-    - shaderProp:
-        name: _MainTex
-      material: {instanceID: 0}
-      baseUID: 1787782
     - shaderProp:
         name: _BumpMap
       material: {instanceID: 0}
       baseUID: 1787776
     - shaderProp:
-        name: _EmissionMap
-      material: {instanceID: 0}
-      baseUID: 2063371
-    - shaderProp:
-        name: _MetallicGlossMap
+        name: _Parameter
       material: {instanceID: 0}
       baseUID: 1787788
     buildTargetSettings:
