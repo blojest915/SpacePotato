@@ -78,6 +78,11 @@ public class LevelManagerScript : MonoBehaviour {
         SceneManager.LoadScene(level);
     }
 
+    public void showUnlockedLevel()
+    {
+        
+    }
+
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene("Main_Menu");
