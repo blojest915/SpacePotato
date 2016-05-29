@@ -6,23 +6,35 @@ using System.Collections;
 public class WinScript : MonoBehaviour {
     
     public int score = 0;
-    public Text ScoreCountText;
     public Text lightCountText;
+    public Text ScoreCountText;
+    public Text TimerMultiplierText;
     public RestartScript restart;
 
     private int TotalLights;
     private int LitLights;
 
-    private int TimerMultiplier;
+    private float TimerFloat = 100;
+    private int TimerMultiplier = 1;
 
     private int levelAmount = 8;
     private int CurrentLevel;
     
 	void Start () {
+
         TotalLights = GameObject.FindGameObjectsWithTag("Light").Length;
-        updateTextScore();
+        ScoreCountText.text = "";
+        TimerMultiplierText.text = "";
         updateLightCount();
-        TimerMultiplier = 4;
+    }
+
+    void Update()
+    {
+        TimerFloat -=  Time.deltaTime;
+        if (TimerMultiplier < 1)
+        {
+            TimerMultiplier = 1;
+        }
     }
 
     void CheckCurrentLevel()
@@ -32,7 +44,6 @@ public class WinScript : MonoBehaviour {
             if (SceneManager.GetActiveScene().name == "level" + i)
             {
                 CurrentLevel = i;
-                Debug.Log(CurrentLevel);
                 SaveMyGame();
             }
         }
@@ -44,13 +55,9 @@ public class WinScript : MonoBehaviour {
         if (NextLevel < levelAmount)
         {
             PlayerPrefs.SetInt("Level" + NextLevel.ToString(), 1);
-            updateLevelScore();
+            
         }
-        else
-        {
-            updateLevelScore();
-        }
-        
+        updateLevelScore();
     }
 
 
@@ -58,7 +65,6 @@ public class WinScript : MonoBehaviour {
     {
         LitLights++;
         score += 1000;
-        updateTextScore();
         updateLightCount();
     }
 
@@ -66,15 +72,7 @@ public class WinScript : MonoBehaviour {
     {
         LitLights--;
         score -= 1000;
-        updateTextScore();
         updateLightCount();
-    }
-
-    IEnumerator Timer()
-    {
-        yield return new WaitForSeconds(2f);
-        Debug.Log("Lost Multipliser");
-        TimerMultiplier--;
     }
 
     void updateLightCount()
@@ -89,13 +87,12 @@ public class WinScript : MonoBehaviour {
         }
     }
 
-    void updateTextScore()
-    {
-        ScoreCountText.text = score.ToString();
-    }
-
     void updateLevelScore()
     {
+        TimerMultiplier = (int)TimerFloat;
+        score = score * TimerMultiplier;
+        ScoreCountText.text = "Score: " + score.ToString();
+        TimerMultiplierText.text = "Timer Multiplier: x" + TimerMultiplier.ToString();
         if (PlayerPrefs.GetInt("Level" + CurrentLevel.ToString() + "_score") < score)
         {
             PlayerPrefs.SetInt("Level" + CurrentLevel.ToString() + "_score", score);
