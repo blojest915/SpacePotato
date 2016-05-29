@@ -13,16 +13,26 @@ public class WinScript : MonoBehaviour {
     private int TotalLights;
     private int LitLights;
 
-    private int TimerMultiplier;
+    private float TimerMultiplier = 50;
 
     private int levelAmount = 8;
     private int CurrentLevel;
     
 	void Start () {
+
         TotalLights = GameObject.FindGameObjectsWithTag("Light").Length;
         updateTextScore();
         updateLightCount();
-        TimerMultiplier = 4;
+    }
+
+    void Update()
+    {
+        TimerMultiplier -=  Time.deltaTime;
+        Debug.Log(TimerMultiplier);
+        if (TimerMultiplier < 1)
+        {
+            TimerMultiplier = 1;
+        }
     }
 
     void CheckCurrentLevel()
@@ -44,6 +54,7 @@ public class WinScript : MonoBehaviour {
         if (NextLevel < levelAmount)
         {
             PlayerPrefs.SetInt("Level" + NextLevel.ToString(), 1);
+            score = score * (int) TimerMultiplier;
             updateLevelScore();
         }
         else
