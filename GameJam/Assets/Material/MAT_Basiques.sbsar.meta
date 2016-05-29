@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 786cd887a73c53d4294e929e7aff7180
-timeCreated: 1464532601
+timeCreated: 1464540108
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -123,10 +123,6 @@ SubstanceImporter:
           second: 0.5
         data:
           first:
-            name: _EmissivePower
-          second: 0.1
-        data:
-          first:
             name: _Parallax
           second: 0.02
         data:
@@ -161,6 +157,10 @@ SubstanceImporter:
           first:
             name: _Metallic
           second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 0.1
         data:
           first:
             name: _EmissiveOnOff
@@ -211,6 +211,1616 @@ SubstanceImporter:
       aniso: 1
       wrapMode: 0
     - name: Level_01_Emissive
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp:
+        name: _MainTex
+      material: {instanceID: 0}
+      baseUID: 1787782
+    - shaderProp:
+        name: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 1787776
+    - shaderProp:
+        name: _Parameter
+      material: {instanceID: 0}
+      baseUID: 1787788
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadingBehavior: 1
+  - serializedVersion: 16
+    name: Level_02
+    prototypeName: Biomydra_Mat_SF
+    shaderName: 
+    shader: {fileID: 4800000, guid: b84ca8400bd9f644a81dc7832981b9f8, type: 3}
+    shaderKeywords: _EMISSION _EMISSIVEONOFF_ON _NORMALMAP
+    renderQueue: 2000
+    lightmapFlags: 1
+    inputs:
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_or_Metal
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_Color
+      value:
+        scalar[0]: 0.05882353
+        scalar[1]: 0.003921569
+        scalar[2]: 0.08235294
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Metal_Type
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Roughness_Value
+      value:
+        scalar[0]: 0.627
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Metal_Color
+      value:
+        scalar[0]: 0.07450981
+        scalar[1]: 0.011764707
+        scalar[2]: 0.07450981
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: EmissiveColorOutput_Color
+      value:
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 1
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 1
+      animationUpdateRate: 42
+    materialProperties:
+      serializedVersion: 2
+      texEnvs:
+        data:
+          first:
+            name: _MainTex
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _BumpMap
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Parameter
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Emissive
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+      floats:
+        data:
+          first:
+            name: _SrcBlend
+          second: 1
+        data:
+          first:
+            name: _DstBlend
+          second: 0
+        data:
+          first:
+            name: _Cutoff
+          second: 0.5
+        data:
+          first:
+            name: _Parallax
+          second: 0.02
+        data:
+          first:
+            name: _ZWrite
+          second: 1
+        data:
+          first:
+            name: _Glossiness
+          second: 0.5
+        data:
+          first:
+            name: _BumpScale
+          second: 1
+        data:
+          first:
+            name: _OcclusionStrength
+          second: 1
+        data:
+          first:
+            name: _DetailNormalMapScale
+          second: 1
+        data:
+          first:
+            name: _UVSec
+          second: 0
+        data:
+          first:
+            name: _Mode
+          second: 0
+        data:
+          first:
+            name: _Metallic
+          second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 0.1
+        data:
+          first:
+            name: _EmissiveOnOff
+          second: 1
+        data:
+          first:
+            name: _node_5786
+          second: 1
+        data:
+          first:
+            name: _Emissiveonoff
+          second: 0
+        data:
+          first:
+            name: _EmissivePowermax
+          second: 1.2
+        data:
+          first:
+            name: _EmissivePowerMin
+          second: 0.8
+        data:
+          first:
+            name: _Time
+          second: 0
+      colors:
+        data:
+          first:
+            name: _EmissionColor
+          second: {r: 1, g: 1, b: 1, a: 1}
+        data:
+          first:
+            name: _Color
+          second: {r: 1, g: 1, b: 1, a: 1}
+    textureParameters:
+    - name: Level_02_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_02_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_02_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_02_Emissive
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp:
+        name: _MainTex
+      material: {instanceID: 0}
+      baseUID: 1787782
+    - shaderProp:
+        name: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 1787776
+    - shaderProp:
+        name: _Parameter
+      material: {instanceID: 0}
+      baseUID: 1787788
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadingBehavior: 1
+  - serializedVersion: 16
+    name: Level_03
+    prototypeName: Biomydra_Mat_SF
+    shaderName: 
+    shader: {fileID: 4800000, guid: b84ca8400bd9f644a81dc7832981b9f8, type: 3}
+    shaderKeywords: _EMISSION _EMISSIVEONOFF_ON _NORMALMAP
+    renderQueue: 2000
+    lightmapFlags: 1
+    inputs:
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_or_Metal
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_Color
+      value:
+        scalar[0]: 0.05882353
+        scalar[1]: 0.003921569
+        scalar[2]: 0.08235294
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Metal_Type
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Roughness_Value
+      value:
+        scalar[0]: 0.627
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Metal_Color
+      value:
+        scalar[0]: 0.07450981
+        scalar[1]: 0.011764707
+        scalar[2]: 0.07450981
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: EmissiveColorOutput_Color
+      value:
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 1
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 1
+      animationUpdateRate: 42
+    materialProperties:
+      serializedVersion: 2
+      texEnvs:
+        data:
+          first:
+            name: _MainTex
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _BumpMap
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Parameter
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Emissive
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+      floats:
+        data:
+          first:
+            name: _SrcBlend
+          second: 1
+        data:
+          first:
+            name: _DstBlend
+          second: 0
+        data:
+          first:
+            name: _Cutoff
+          second: 0.5
+        data:
+          first:
+            name: _Parallax
+          second: 0.02
+        data:
+          first:
+            name: _ZWrite
+          second: 1
+        data:
+          first:
+            name: _Glossiness
+          second: 0.5
+        data:
+          first:
+            name: _BumpScale
+          second: 1
+        data:
+          first:
+            name: _OcclusionStrength
+          second: 1
+        data:
+          first:
+            name: _DetailNormalMapScale
+          second: 1
+        data:
+          first:
+            name: _UVSec
+          second: 0
+        data:
+          first:
+            name: _Mode
+          second: 0
+        data:
+          first:
+            name: _Metallic
+          second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 0.1
+        data:
+          first:
+            name: _EmissiveOnOff
+          second: 1
+        data:
+          first:
+            name: _node_5786
+          second: 1
+        data:
+          first:
+            name: _Emissiveonoff
+          second: 0
+        data:
+          first:
+            name: _EmissivePowermax
+          second: 1.2
+        data:
+          first:
+            name: _EmissivePowerMin
+          second: 0.8
+        data:
+          first:
+            name: _Time
+          second: 0
+      colors:
+        data:
+          first:
+            name: _EmissionColor
+          second: {r: 1, g: 1, b: 1, a: 1}
+        data:
+          first:
+            name: _Color
+          second: {r: 1, g: 1, b: 1, a: 1}
+    textureParameters:
+    - name: Level_03_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_03_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_03_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_03_Emissive
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp:
+        name: _MainTex
+      material: {instanceID: 0}
+      baseUID: 1787782
+    - shaderProp:
+        name: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 1787776
+    - shaderProp:
+        name: _Parameter
+      material: {instanceID: 0}
+      baseUID: 1787788
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadingBehavior: 1
+  - serializedVersion: 16
+    name: Level_04
+    prototypeName: Biomydra_Mat_SF
+    shaderName: 
+    shader: {fileID: 4800000, guid: b84ca8400bd9f644a81dc7832981b9f8, type: 3}
+    shaderKeywords: _EMISSION _EMISSIVEONOFF_ON _NORMALMAP
+    renderQueue: 2000
+    lightmapFlags: 1
+    inputs:
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_or_Metal
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_Color
+      value:
+        scalar[0]: 0.05882353
+        scalar[1]: 0.003921569
+        scalar[2]: 0.08235294
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Metal_Type
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Roughness_Value
+      value:
+        scalar[0]: 0.627
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Metal_Color
+      value:
+        scalar[0]: 0.07450981
+        scalar[1]: 0.011764707
+        scalar[2]: 0.07450981
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: EmissiveColorOutput_Color
+      value:
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 1
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 1
+      animationUpdateRate: 42
+    materialProperties:
+      serializedVersion: 2
+      texEnvs:
+        data:
+          first:
+            name: _MainTex
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _BumpMap
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Parameter
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Emissive
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+      floats:
+        data:
+          first:
+            name: _SrcBlend
+          second: 1
+        data:
+          first:
+            name: _DstBlend
+          second: 0
+        data:
+          first:
+            name: _Cutoff
+          second: 0.5
+        data:
+          first:
+            name: _Parallax
+          second: 0.02
+        data:
+          first:
+            name: _ZWrite
+          second: 1
+        data:
+          first:
+            name: _Glossiness
+          second: 0.5
+        data:
+          first:
+            name: _BumpScale
+          second: 1
+        data:
+          first:
+            name: _OcclusionStrength
+          second: 1
+        data:
+          first:
+            name: _DetailNormalMapScale
+          second: 1
+        data:
+          first:
+            name: _UVSec
+          second: 0
+        data:
+          first:
+            name: _Mode
+          second: 0
+        data:
+          first:
+            name: _Metallic
+          second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 0.1
+        data:
+          first:
+            name: _EmissiveOnOff
+          second: 1
+        data:
+          first:
+            name: _node_5786
+          second: 1
+        data:
+          first:
+            name: _Emissiveonoff
+          second: 0
+        data:
+          first:
+            name: _EmissivePowermax
+          second: 1.2
+        data:
+          first:
+            name: _EmissivePowerMin
+          second: 0.8
+        data:
+          first:
+            name: _Time
+          second: 0
+      colors:
+        data:
+          first:
+            name: _EmissionColor
+          second: {r: 1, g: 1, b: 1, a: 1}
+        data:
+          first:
+            name: _Color
+          second: {r: 1, g: 1, b: 1, a: 1}
+    textureParameters:
+    - name: Level_04_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_04_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_04_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_04_Emissive
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp:
+        name: _MainTex
+      material: {instanceID: 0}
+      baseUID: 1787782
+    - shaderProp:
+        name: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 1787776
+    - shaderProp:
+        name: _Parameter
+      material: {instanceID: 0}
+      baseUID: 1787788
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadingBehavior: 1
+  - serializedVersion: 16
+    name: Level_05
+    prototypeName: Biomydra_Mat_SF
+    shaderName: 
+    shader: {fileID: 4800000, guid: b84ca8400bd9f644a81dc7832981b9f8, type: 3}
+    shaderKeywords: _EMISSION _EMISSIVEONOFF_ON _NORMALMAP
+    renderQueue: 2000
+    lightmapFlags: 1
+    inputs:
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_or_Metal
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_Color
+      value:
+        scalar[0]: 0.05882353
+        scalar[1]: 0.003921569
+        scalar[2]: 0.08235294
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Metal_Type
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Roughness_Value
+      value:
+        scalar[0]: 0.627
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Metal_Color
+      value:
+        scalar[0]: 0.07450981
+        scalar[1]: 0.011764707
+        scalar[2]: 0.07450981
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: EmissiveColorOutput_Color
+      value:
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 1
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 1
+      animationUpdateRate: 42
+    materialProperties:
+      serializedVersion: 2
+      texEnvs:
+        data:
+          first:
+            name: _MainTex
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _BumpMap
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Parameter
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Emissive
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+      floats:
+        data:
+          first:
+            name: _SrcBlend
+          second: 1
+        data:
+          first:
+            name: _DstBlend
+          second: 0
+        data:
+          first:
+            name: _Cutoff
+          second: 0.5
+        data:
+          first:
+            name: _Parallax
+          second: 0.02
+        data:
+          first:
+            name: _ZWrite
+          second: 1
+        data:
+          first:
+            name: _Glossiness
+          second: 0.5
+        data:
+          first:
+            name: _BumpScale
+          second: 1
+        data:
+          first:
+            name: _OcclusionStrength
+          second: 1
+        data:
+          first:
+            name: _DetailNormalMapScale
+          second: 1
+        data:
+          first:
+            name: _UVSec
+          second: 0
+        data:
+          first:
+            name: _Mode
+          second: 0
+        data:
+          first:
+            name: _Metallic
+          second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 0.1
+        data:
+          first:
+            name: _EmissiveOnOff
+          second: 1
+        data:
+          first:
+            name: _node_5786
+          second: 1
+        data:
+          first:
+            name: _Emissiveonoff
+          second: 0
+        data:
+          first:
+            name: _EmissivePowermax
+          second: 1.2
+        data:
+          first:
+            name: _EmissivePowerMin
+          second: 0.8
+        data:
+          first:
+            name: _Time
+          second: 0
+      colors:
+        data:
+          first:
+            name: _EmissionColor
+          second: {r: 1, g: 1, b: 1, a: 1}
+        data:
+          first:
+            name: _Color
+          second: {r: 1, g: 1, b: 1, a: 1}
+    textureParameters:
+    - name: Level_05_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_05_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_05_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_05_Emissive
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp:
+        name: _MainTex
+      material: {instanceID: 0}
+      baseUID: 1787782
+    - shaderProp:
+        name: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 1787776
+    - shaderProp:
+        name: _Parameter
+      material: {instanceID: 0}
+      baseUID: 1787788
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadingBehavior: 1
+  - serializedVersion: 16
+    name: Level_06
+    prototypeName: Biomydra_Mat_SF
+    shaderName: 
+    shader: {fileID: 4800000, guid: b84ca8400bd9f644a81dc7832981b9f8, type: 3}
+    shaderKeywords: _EMISSION _EMISSIVEONOFF_ON _NORMALMAP
+    renderQueue: 2000
+    lightmapFlags: 1
+    inputs:
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_or_Metal
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_Color
+      value:
+        scalar[0]: 0.05882353
+        scalar[1]: 0.003921569
+        scalar[2]: 0.08235294
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Metal_Type
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Roughness_Value
+      value:
+        scalar[0]: 0.627
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Metal_Color
+      value:
+        scalar[0]: 0.07450981
+        scalar[1]: 0.011764707
+        scalar[2]: 0.07450981
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: EmissiveColorOutput_Color
+      value:
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 1
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 1
+      animationUpdateRate: 42
+    materialProperties:
+      serializedVersion: 2
+      texEnvs:
+        data:
+          first:
+            name: _MainTex
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _BumpMap
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Parameter
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Emissive
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+      floats:
+        data:
+          first:
+            name: _SrcBlend
+          second: 1
+        data:
+          first:
+            name: _DstBlend
+          second: 0
+        data:
+          first:
+            name: _Cutoff
+          second: 0.5
+        data:
+          first:
+            name: _Parallax
+          second: 0.02
+        data:
+          first:
+            name: _ZWrite
+          second: 1
+        data:
+          first:
+            name: _Glossiness
+          second: 0.5
+        data:
+          first:
+            name: _BumpScale
+          second: 1
+        data:
+          first:
+            name: _OcclusionStrength
+          second: 1
+        data:
+          first:
+            name: _DetailNormalMapScale
+          second: 1
+        data:
+          first:
+            name: _UVSec
+          second: 0
+        data:
+          first:
+            name: _Mode
+          second: 0
+        data:
+          first:
+            name: _Metallic
+          second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 0.1
+        data:
+          first:
+            name: _EmissiveOnOff
+          second: 1
+        data:
+          first:
+            name: _node_5786
+          second: 1
+        data:
+          first:
+            name: _Emissiveonoff
+          second: 0
+        data:
+          first:
+            name: _EmissivePowermax
+          second: 1.2
+        data:
+          first:
+            name: _EmissivePowerMin
+          second: 0.8
+        data:
+          first:
+            name: _Time
+          second: 0
+      colors:
+        data:
+          first:
+            name: _EmissionColor
+          second: {r: 1, g: 1, b: 1, a: 1}
+        data:
+          first:
+            name: _Color
+          second: {r: 1, g: 1, b: 1, a: 1}
+    textureParameters:
+    - name: Level_06_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_06_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_06_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_06_Emissive
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp:
+        name: _MainTex
+      material: {instanceID: 0}
+      baseUID: 1787782
+    - shaderProp:
+        name: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 1787776
+    - shaderProp:
+        name: _Parameter
+      material: {instanceID: 0}
+      baseUID: 1787788
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadingBehavior: 1
+  - serializedVersion: 16
+    name: Level_07
+    prototypeName: Biomydra_Mat_SF
+    shaderName: 
+    shader: {fileID: 4800000, guid: b84ca8400bd9f644a81dc7832981b9f8, type: 3}
+    shaderKeywords: _EMISSION _EMISSIVEONOFF_ON _NORMALMAP
+    renderQueue: 2000
+    lightmapFlags: 1
+    inputs:
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_or_Metal
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_Color
+      value:
+        scalar[0]: 0.05882353
+        scalar[1]: 0.003921569
+        scalar[2]: 0.08235294
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Metal_Type
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Roughness_Value
+      value:
+        scalar[0]: 0.627
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Metal_Color
+      value:
+        scalar[0]: 0.07450981
+        scalar[1]: 0.011764707
+        scalar[2]: 0.07450981
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: EmissiveColorOutput_Color
+      value:
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 1
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 1
+      animationUpdateRate: 42
+    materialProperties:
+      serializedVersion: 2
+      texEnvs:
+        data:
+          first:
+            name: _MainTex
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _BumpMap
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Parameter
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Emissive
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+      floats:
+        data:
+          first:
+            name: _SrcBlend
+          second: 1
+        data:
+          first:
+            name: _DstBlend
+          second: 0
+        data:
+          first:
+            name: _Cutoff
+          second: 0.5
+        data:
+          first:
+            name: _Parallax
+          second: 0.02
+        data:
+          first:
+            name: _ZWrite
+          second: 1
+        data:
+          first:
+            name: _Glossiness
+          second: 0.5
+        data:
+          first:
+            name: _BumpScale
+          second: 1
+        data:
+          first:
+            name: _OcclusionStrength
+          second: 1
+        data:
+          first:
+            name: _DetailNormalMapScale
+          second: 1
+        data:
+          first:
+            name: _UVSec
+          second: 0
+        data:
+          first:
+            name: _Mode
+          second: 0
+        data:
+          first:
+            name: _Metallic
+          second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 0.1
+        data:
+          first:
+            name: _EmissiveOnOff
+          second: 1
+        data:
+          first:
+            name: _node_5786
+          second: 1
+        data:
+          first:
+            name: _Emissiveonoff
+          second: 0
+        data:
+          first:
+            name: _EmissivePowermax
+          second: 1.2
+        data:
+          first:
+            name: _EmissivePowerMin
+          second: 0.8
+        data:
+          first:
+            name: _Time
+          second: 0
+      colors:
+        data:
+          first:
+            name: _EmissionColor
+          second: {r: 1, g: 1, b: 1, a: 1}
+        data:
+          first:
+            name: _Color
+          second: {r: 1, g: 1, b: 1, a: 1}
+    textureParameters:
+    - name: Level_07_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_07_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_07_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_07_Emissive
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp:
+        name: _MainTex
+      material: {instanceID: 0}
+      baseUID: 1787782
+    - shaderProp:
+        name: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 1787776
+    - shaderProp:
+        name: _Parameter
+      material: {instanceID: 0}
+      baseUID: 1787788
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadingBehavior: 1
+  - serializedVersion: 16
+    name: Level_08
+    prototypeName: Biomydra_Mat_SF
+    shaderName: 
+    shader: {fileID: 4800000, guid: b84ca8400bd9f644a81dc7832981b9f8, type: 3}
+    shaderKeywords: _EMISSION _EMISSIVEONOFF_ON _NORMALMAP
+    renderQueue: 2000
+    lightmapFlags: 1
+    inputs:
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_or_Metal
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Dielectrique_Color
+      value:
+        scalar[0]: 0.20392159
+        scalar[1]: 0
+        scalar[2]: 0.11764707
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Metal_Type
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Roughness_Value
+      value:
+        scalar[0]: 0.627
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Metal_Color
+      value:
+        scalar[0]: 0.07450981
+        scalar[1]: 0.011764707
+        scalar[2]: 0.07450981
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: EmissiveColorOutput_Color
+      value:
+        scalar[0]: 1
+        scalar[1]: 1
+        scalar[2]: 1
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 1
+      animationUpdateRate: 42
+    materialProperties:
+      serializedVersion: 2
+      texEnvs:
+        data:
+          first:
+            name: _MainTex
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _BumpMap
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Parameter
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+        data:
+          first:
+            name: _Emissive
+          second:
+            texture: {instanceID: 0}
+            scale: {x: 1, y: 1}
+            offset: {x: 0, y: 0}
+      floats:
+        data:
+          first:
+            name: _SrcBlend
+          second: 1
+        data:
+          first:
+            name: _DstBlend
+          second: 0
+        data:
+          first:
+            name: _Cutoff
+          second: 0.5
+        data:
+          first:
+            name: _Parallax
+          second: 0.02
+        data:
+          first:
+            name: _ZWrite
+          second: 1
+        data:
+          first:
+            name: _Glossiness
+          second: 0.5
+        data:
+          first:
+            name: _BumpScale
+          second: 1
+        data:
+          first:
+            name: _OcclusionStrength
+          second: 1
+        data:
+          first:
+            name: _DetailNormalMapScale
+          second: 1
+        data:
+          first:
+            name: _UVSec
+          second: 0
+        data:
+          first:
+            name: _Mode
+          second: 0
+        data:
+          first:
+            name: _Metallic
+          second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 0.1
+        data:
+          first:
+            name: _EmissiveOnOff
+          second: 1
+        data:
+          first:
+            name: _node_5786
+          second: 1
+        data:
+          first:
+            name: _Emissiveonoff
+          second: 0
+        data:
+          first:
+            name: _EmissivePowermax
+          second: 1.2
+        data:
+          first:
+            name: _EmissivePowerMin
+          second: 0.8
+        data:
+          first:
+            name: _Time
+          second: 0
+      colors:
+        data:
+          first:
+            name: _EmissionColor
+          second: {r: 1, g: 1, b: 1, a: 1}
+        data:
+          first:
+            name: _Color
+          second: {r: 1, g: 1, b: 1, a: 1}
+    textureParameters:
+    - name: Level_08_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_08_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_08_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Level_08_Emissive
       alphaSource: 0
       filterMode: 1
       aniso: 1
@@ -353,10 +1963,6 @@ SubstanceImporter:
           second: 0.5
         data:
           first:
-            name: _EmissivePower
-          second: 0.1
-        data:
-          first:
             name: _Parallax
           second: 0.02
         data:
@@ -391,6 +1997,10 @@ SubstanceImporter:
           first:
             name: _Metallic
           second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 0.1
         data:
           first:
             name: _EmissiveOnOff
@@ -567,10 +2177,6 @@ SubstanceImporter:
           second: 0.5
         data:
           first:
-            name: _EmissivePower
-          second: 7.94
-        data:
-          first:
             name: _Parallax
           second: 0.02
         data:
@@ -605,6 +2211,10 @@ SubstanceImporter:
           first:
             name: _Metallic
           second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 7.94
         data:
           first:
             name: _EmissiveOnOff
@@ -805,10 +2415,6 @@ SubstanceImporter:
           second: 0.5
         data:
           first:
-            name: _EmissivePower
-          second: 7.94
-        data:
-          first:
             name: _Parallax
           second: 0.02
         data:
@@ -843,6 +2449,10 @@ SubstanceImporter:
           first:
             name: _Metallic
           second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 7.94
         data:
           first:
             name: _EmissiveOnOff
@@ -1027,10 +2637,6 @@ SubstanceImporter:
           second: 0.5
         data:
           first:
-            name: _EmissivePower
-          second: 0.1
-        data:
-          first:
             name: _Parallax
           second: 0.02
         data:
@@ -1065,6 +2671,10 @@ SubstanceImporter:
           first:
             name: _Metallic
           second: 0
+        data:
+          first:
+            name: _EmissivePower
+          second: 0.1
         data:
           first:
             name: _EmissiveOnOff
