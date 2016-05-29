@@ -5,10 +5,7 @@ public class scr_triggerlight : MonoBehaviour {
 
 	private Light light01;
 	private bool isOn = true;
-
-    private bool isTurningOff = false;
-
-    public float duration = 30.0f;
+    
     public scr_Eyeball eyeball;
 
     private float setDuration;
@@ -26,15 +23,9 @@ public class scr_triggerlight : MonoBehaviour {
 	{
 		light01 = gameObject.GetComponentInChildren<Light> ();
 		myLight = gameObject.GetComponentInChildren<Renderer> ();
-        setDuration = duration;
         myLight.material = offMaterial;
         light01.enabled = false;
         isOn = false;
-    }
-
-    void resetDuration()
-    {
-        duration = setDuration;
     }
 
     void OnTriggerEnter(Collider other)
@@ -45,20 +36,9 @@ public class scr_triggerlight : MonoBehaviour {
         }
     }
 
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Player" && isOn)
-        {
-            isTurningOff = true;
-        }
-    }
-    
-
 
     void ToggleLight()
 	{
-        isTurningOff = false;
-        resetDuration();
         if (isOn)
 		{
             lookDelai = 0.5f;
@@ -85,21 +65,4 @@ public class scr_triggerlight : MonoBehaviour {
             
         }
 	}
-
-    
-
-    void Update()
-    {
-        if (isTurningOff)
-        {
-            duration = duration -= Time.deltaTime;
-            float amplitude = duration;
-            light01.intensity = amplitude;
-            if (duration < 0)
-            {
-                ToggleLight();
-            }
-        }
-    }
-    
 }
