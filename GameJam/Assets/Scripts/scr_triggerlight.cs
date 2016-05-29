@@ -9,6 +9,8 @@ public class scr_triggerlight : MonoBehaviour {
 	private Renderer myLight; 
 	public Material onMaterial;
 	public Material offMaterial;
+	public GameObject OnEye;
+	public GameObject OffEye;
 
 	// Use this for initialization
 	void Start () 
@@ -38,6 +40,8 @@ public class scr_triggerlight : MonoBehaviour {
 			light01.enabled = false;
 			isOn = false; 
 			myLight.material = offMaterial;
+			OnEye.SetActive(false);
+			OffEye.SetActive(true);
             GameObject.FindGameObjectWithTag("WinCondition").GetComponent<WinScript>().decrementLights();
         }
 		else
@@ -45,6 +49,8 @@ public class scr_triggerlight : MonoBehaviour {
 			light01.enabled = true;
 			isOn = true;
 			myLight.material = onMaterial;
+			OnEye.SetActive(true);
+			OffEye.SetActive(false);
             GameObject.FindGameObjectWithTag("WinCondition").GetComponent<WinScript>().incrementLights();
         }
 	}
