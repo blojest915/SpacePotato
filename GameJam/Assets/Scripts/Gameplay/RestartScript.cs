@@ -13,7 +13,10 @@ public class RestartScript : MonoBehaviour {
 
     void Start()
     {
-        GameObject.FindWithTag("Music").BroadcastMessage("PlayLevelMusic");
+        if (GameObject.FindWithTag("Music") != null)
+        {
+            GameObject.FindWithTag("Music").BroadcastMessage("PlayLevelMusic");
+        }
         isActive = false;
         RestartImage.enabled = false;
         RestartText.enabled = false;
@@ -40,7 +43,10 @@ public class RestartScript : MonoBehaviour {
     {
         SceneManager.LoadScene("Level_Select");
         Time.timeScale = 1.0f;
-        GameObject.FindWithTag("Music").BroadcastMessage("PlayMenuMusic");
+        if (GameObject.FindWithTag("Music") != null)
+        {
+            GameObject.FindWithTag("Music").BroadcastMessage("PlayMenuMusic");
+        }
 
     }
 

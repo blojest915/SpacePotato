@@ -10,7 +10,10 @@ public class scr_QuitLevel : MonoBehaviour {
         {
             SceneManager.LoadScene("Level_Select");
             Time.timeScale = 1.0f;
-            GameObject.FindWithTag("Music").BroadcastMessage("PlayMenuMusic");
+            if (GameObject.FindWithTag("Music") != null)
+            {
+                GameObject.FindWithTag("Music").BroadcastMessage("PlayMenuMusic");
+            }
         }
     }
 }

@@ -19,7 +19,10 @@ public class LoseScript : MonoBehaviour {
             if (other.gameObject.CompareTag("DeadZone"))
             {
                 GameOver();
-                GameObject.FindWithTag("Music").BroadcastMessage("PlayLoseMusic");
+                if (GameObject.FindWithTag("Music") != null)
+                {
+                    GameObject.FindWithTag("Music").BroadcastMessage("PlayLoseMusic");
+                }
                 Time.timeScale = 0f;
                 restart.ToggleOn();
             }
